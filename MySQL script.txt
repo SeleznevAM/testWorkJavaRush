@@ -1,0 +1,32 @@
+CREATE SCHEMA `usermnager` DEFAULT CHARACTER SET utf8 ;
+
+CREATE TABLE `usermnager`.`users` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  
+`name` VARCHAR(25) NOT NULL,
+  
+`age` INT NOT NULL,
+  
+`isAdmin` TINYINT(1) NOT NULL,
+  
+`createDate` DATE NOT NULL,
+
+  PRIMARY KEY (`id`));
+
+INSERT INTO usermnager.users (name, age, isAdmin, createDate) VALUE
+("Alexander", 35, 1, NOW());
+
+
+
+INSERT INTO usermnager.users (name, age, isAdmin, createDate) VALUE
+("Irina", 31, 0, NOW());
+
+
+
+INSERT INTO usermnager.users (name, age, isAdmin, createDate) VALUE
+("Marina", 16, 1, NOW());
+
+
+
+INSERT INTO usermnager.users (name, age, isAdmin, createDate) VALUE
+("Semen", 55, 0, NOW());
